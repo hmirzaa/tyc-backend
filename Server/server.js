@@ -12,7 +12,7 @@ app.get("/", (req, res) => res.send("Hello World"));
 require("../Config/config");
 var routes = require("../Routes/routes");
 routes(app);
-app.listen(port, () => console.log(`Node server running at http://localhost:${port}`));
+app.listen(8080, '0.0.0.0'));
 app.use(cors());
 // app.listen(port, () =>
 //   console.log(`Node server running at http://localhost:${port}`)
